@@ -1,10 +1,12 @@
-import React from "react"
+import React, {useCallback, useRef} from "react"
 import style from "styles/home/about.module.css"
 import Image from "next/image"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 
 const About = () => {
+  const ref = useRef();
+
   const animationTitle = useAnimation()
   const animationCard1 = useAnimation()
   const animationCard2 = useAnimation()
@@ -15,7 +17,10 @@ const About = () => {
   const allAnimationDelay = 0.5;
   const allAnimationHideDuration = 0.5;
 
-  const { inView, entry, ref } = useInView({threshold: 1});
+  // const { inView, entry, ref } = useInView({ threshold: 1 });
+  // const { outView, entry1, ref1 } = useInView({threshold: .5})
+  const [inViewRef, inView] = useInView({ threshold: 0.7})
+  const [inHideRef, outView] = useInView({ threshold: 0.2})
 
   if (inView) {
     animationTitle.start({
@@ -34,7 +39,7 @@ const About = () => {
       opacity: 1, transition:{ delay: allAnimationDelay, duration: allAnimationShowDuration}
     })
   }
-  else {
+  if(!outView) {
     animationTitle.start({
       opacity: 0, transition:{duration: allAnimationHideDuration}
     })
@@ -52,8 +57,18 @@ const About = () => {
     })
   }
 
+  // const setRefs = useCallback(
+  //   (node) => {
+  //     // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+  //     inViewRef(node)
+  //     inHideRef(node)
+  //   },
+  //   [inViewRef, inHideRef],
+  // )
+
   return (
-    <div ref={ref}>
+    <div ref={inViewRef}>
+      <div ref={inHideRef}>
       <motion.div
         className={style.textContainer}
         initial={{ opacity: 0 }}
@@ -149,7 +164,8 @@ const About = () => {
           </motion.div>
         </div>
 
-      </div>
+        </div>
+        </div>
     </div>
   )
 }

@@ -20,6 +20,8 @@
 .textContainer{
   background-color: rgb(243, 243, 243);
   text-align: center;
+  word-break: keep-all;
+  line-height: 22px;
 }
 .textContainer h4{
   padding-top: 30px;
@@ -109,10 +111,6 @@
 
 .card__image {
   transition: 0.5s ease-in-out;
-  background: url("/business-people.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
 }
 
 .card__caption {
@@ -202,4 +200,20 @@
 .disclaimer__link {
   color: #755d87;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .card{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card__thumb {
+    max-height: 150px;
+  }
+  .card{
+    width: 150px;
+    max-height: 150px;
+  }
 }
