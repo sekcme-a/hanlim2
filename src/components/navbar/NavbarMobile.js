@@ -42,7 +42,7 @@ const Navbar = () => {
             src="/logo.jpg"
             height={45}
             width={160}
-            alt="대한생활체육회 로고"
+            alt="벤처한림회 로고"
             className="navbar-logo-img"
           />
         </Link>

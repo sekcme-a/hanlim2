@@ -143,3 +143,30 @@
   margin-right: 3px;
   margin-bottom: 5px;
 }
+
+@media (max-width: 880px) {
+
+  .footerDistributed {
+    font: bold 14px sans-serif;
+
+  }
+
+  .footerDistributed .footerLeft,
+  .footerDistributed .footerCenter,
+  .footerDistributed .footerRight {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footerDistributed .footerCenter i {
+    margin-left: 0;
+  }
+
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+
+}

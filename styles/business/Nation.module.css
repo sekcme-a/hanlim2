@@ -1,0 +1,39 @@
+
+.title{
+  display:inline-block;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 26px;
+  font-family: 'Nanum Gothic',
+  sans-serif;
+}
+.subtitle {
+  display: inline-block;
+  width: 100%;
+  margin-top: -23px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: 'NanumSquareRound',
+    sans-serif;
+}
+
+.list{
+  list-style:upper-roman;
+  margin-top: -15px;
+  padding-left: 65px;
+}
+.list li{
+  font-family: 'Roboto',
+  sans-serif;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  word-break: keep-all;
+}
+
+.asdf{
+  margin-top: 3px;
+  display: inline-block;
+  width: 100%;
+}

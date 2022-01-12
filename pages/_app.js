@@ -6,6 +6,8 @@ import '../styles/globals.css'
 import 'styles/navbar.css'
 import 'styles/dropdownPc.css'
 import 'styles/navbarMobile.css'
+import 'styles/navbarVertical.css'
+import 'styles/container.css'
 
 function MyApp({ Component, pageProps }) {
   const [mobileMode, setMobileMode] = useState("false")
