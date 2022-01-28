@@ -35,12 +35,10 @@
   cursor: pointer;
 }
 .nav-item:hover{
-  background-color: #ffe790;
+  color: #e0b722 !important;
   transition: .5s;
 }
-.arrowDropDown{
-  color: #222;
-}
+
 
 @media screen and (max-width: 1024px) {
   .navbar-content {

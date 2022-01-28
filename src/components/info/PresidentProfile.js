@@ -15,10 +15,12 @@ const Greet = () => {
       <div className={styles.greetContent}>
         <div className={styles.img}>
           <Image
-                src="/rlarbstlr.png"
-                height={210}
-                width={180}
-                alt="회장 프로필"
+            src="/rlarbstlr.png"
+            height={210}
+            width={180}
+            alt="회장 프로필"
+            priority={true}
+            loading="eager"
           />
         </div>
       </div>

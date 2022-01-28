@@ -34,6 +34,7 @@ const Navbar = () => {
             width={190}
             alt="벤처한림회 로고"
             className="navbar-logo-img"
+            priority={true} loading="eager"
           />
         </Link>
       </div>

@@ -18,6 +18,8 @@ const Greet = () => {
           height={1300}
           width={900}
           alt="회장 인사말"
+          priority={true}
+          loading="eager"
         />
       </div>
     </>

@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+
 .naverMapWhere {
   border: 1px solid black;
   margin-top: 20px;
+  font-family: 'Nanum Gothic',
+  sans-serif;
 }
 
 .howToComeText {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 20px;
   word-break: keep-all;
-  width: 290px;
   margin-top: 20px;
+  font-family: 'Nanum Gothic',
+  sans-serif;
 }
 
 .openNaverMap {

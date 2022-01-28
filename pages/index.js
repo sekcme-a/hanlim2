@@ -3,7 +3,7 @@ import Image from 'next/image'
 import HomeHeader from "src/components/home/HomeHeader"
 import LogoInfo from "src/components/home/LogoInfo"
 import About from "src/components/home/About"
-import Footer from "src/components/home/Footer"
+import Footer from "src/components/public/Footer"
 
 
 export default function Home() {

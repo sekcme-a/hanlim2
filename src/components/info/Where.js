@@ -16,7 +16,7 @@ const Where = () => {
       </Head>
       <div className={style.mapImg}>
         <Link passHref={true} href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%EC%95%88%EB%8F%99%20465-11/address/14145047.206287246,4517663.475332933,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%EC%95%88%EB%8F%99%20465-11,jibun?c=14144758.3099447,4517624.2530617,16,0,0,0,dh">
-        <Image src="/where1.png"  width={430} height={300} alt="지도" />
+          <Image src="/where1.png" width={430} height={300} alt="지도" priority={true} loading="eager"/>
         </Link>
       </div>
       <div className={style.howToComeText}>
@@ -29,7 +29,7 @@ const Where = () => {
       </div>
       <div className={style.mapImg}>
         <Link passHref={true} href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%EC%95%88%EB%8F%99%20465-11/address/14145047.206287246,4517663.475332933,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%EC%95%88%EB%8F%99%20465-11,jibun?c=14144758.3099447,4517624.2530617,16,0,0,0,dh">
-        <Image src="/where2.png"  width={430} height={300} alt="지도" />
+        <Image src="/where2.png"  width={430} height={300} alt="지도" priority={true} loading="eager"/>
         </Link>
       </div>
       <div className={style.howToComeText}>

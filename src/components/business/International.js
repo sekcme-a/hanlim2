@@ -15,9 +15,11 @@ const Nation = () => {
         <div className={style.container}>
           <Image
             src="/2022plan.jpg"
-            height={800}
-            width={700}
+            height={890}
+            width={800}
             alt="2022 중점사업"
+            priority={true}
+            loading="eager"
           />
         </div>
     </>

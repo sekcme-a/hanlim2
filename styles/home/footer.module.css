@@ -33,7 +33,7 @@
 }
 
 .footerDistributed h3 span {
-  color: #5383d3;
+  /* color: #5383d3; */
 }
 
 .footerDistributed .footerInfo {
@@ -86,18 +86,20 @@
   display: inline-block;
   color: #b2b7be;
   vertical-align: middle;
-  margin: 0;
+  margin: 0px;
+  margin-top: -10px;
 }
 
 .footerDistributed .footerCenter p span {
   display: block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 2;
+  margin-top: 10px;
 }
 
 .footerDistributed .footerCenter p a {
-  color: #5383d3;
+  /* color: #5383d3; */
   text-decoration: none;
   ;
 }

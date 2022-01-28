@@ -1,10 +1,11 @@
 import React, { useEffect, useContext, useState} from "react"
 import Header from "src/components/public/Header"
 import { MenuItems } from "data/MenuItems"
-import NavbarVertical from "src/components/public/NavbarVertical"
+import NavbarVertical from "src/components/navbar/NavbarVertical"
 import { useRouter } from "next/router"
 import Nation from "src/components/business/Nation"
 import International from "src/components/business/International"
+import Footer from "src/components/public/Footer"
 
 const Info = () => {
   const [title, setTitle] = useState("")
@@ -28,9 +29,10 @@ const Info = () => {
       <Header nav={`${title}`} />
       <div className="body">
         <div className="body-container">
+          <NavbarVertical loc={title} />
           <div className="content-container">
             <div className="menu-container">
-              <h3 className="menu-result">{subtitle}</h3>
+              <h3 className="menu-result">{`${title} / ${subtitle}`}</h3>
               <div className="menu-border"></div>
             </div>
             <div className="content">
@@ -39,9 +41,9 @@ const Info = () => {
               
             </div>
           </div>
-          <NavbarVertical loc={title} />
         </div>
       </div>
+      <Footer />
     </>
   )
 }

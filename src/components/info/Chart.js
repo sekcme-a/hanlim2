@@ -14,11 +14,13 @@ const Greet = () => {
       </Head>
       <div className={style.container}>
         <Image
-                src="/chart.jpg"
-                height={1200}
-                width={700}
-                alt="중앙 조직도"
-          />
+          src="/chart.jpg"
+          height={1300}
+          width={700}
+          alt="중앙 조직도"
+          priority={true}
+          loading="eager"
+        />
       </div>
     </>
   )
